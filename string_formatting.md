@@ -120,9 +120,9 @@ echo ${file%.*}
     sumstats
 
 
-The general representation for this is: `${var\%pattern}`. What is actually happening is bash searchs within the value of `var` for a specified `pattern`. The `\%` operator tells it to begin its search from the end and remove the **shortest** matching substring.
+The general representation for this is: `${var\%pattern}`. What is actually happening is bash searches within the value of `var` for a specified `pattern`. The `\%` operator tells it to begin its search from the end and remove the **shortest** matching substring.
 
-If we want to only obtain the extension from `file`'s value, this is done very similarly  (with or without the use of wildcards), using the form `${var#pattern}`, which begins its search at the beginning of the string and removes the **shortest** matching substring:
+If we want to only obtain the extension from `file`'s value, this is done very similarly (with or without the use of wildcards), using the form `${var#pattern}`, which begins its search at the beginning of the string and removes the **shortest** matching substring:
 
 
 ```bash
@@ -180,7 +180,7 @@ echo ${path:8:6}
     ses/uk
 
 
-By getting creative, there are many things that can be accomplished just with these substring isolation techniques. However, somethings have their own syntax for accomplishing them more efficiently, such as replacing parts of strings or changing the capitalisation of some, or all, of a string.
+By getting creative, there are many things that can be accomplished just with these substring isolation techniques. However, some things have their own syntax for accomplishing them more efficiently, such as replacing parts of strings or changing the capitalisation of some, or all, of a string.
 
 ### Subbing out substrings
 
@@ -216,7 +216,6 @@ Now, a nuance of what we've just done, is that *only the first match* of the pat
 
 
 ```bash
-dance=jiggety-jig
 dance=jiggety-jig
 echo $dance
 echo ${dance/jig/dog}
