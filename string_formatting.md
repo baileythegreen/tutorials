@@ -254,3 +254,5 @@ echo ${dance/%jig/dog}
     doggety-jig
     jiggety-dog
 
+
+This tutorial is not exhaustive, but it should serve as a good starting point for manipulating strings in bash, and show some of the relevant terminology — which will help with internet searches.
